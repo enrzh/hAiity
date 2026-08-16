@@ -6,7 +6,7 @@
 
 <p align="center">Habits, GitHub style. A native iOS habit tracker where every habit is a contribution graph.</p>
 
-<p align="center"><a href="https://enrzh.github.io/hAiity/">Website</a> · <a href="https://aiity.de">Part of the aiity family</a></p>
+<p align="center"><a href="https://enrzh.github.io/hAiity/">Website</a> · <a href="https://enrzh.github.io/hAiity/privacy.html">Privacy</a> · <a href="https://aiity.de">Part of the aiity family</a></p>
 
 ---
 

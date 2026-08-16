@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy — hAiity</title>
+<meta name="description" content="Privacy policy for the iOS app hAiity: no accounts, no trackers, data on the device and in the user's own private iCloud.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='6' y='6' width='40' height='40' rx='9' fill='%2339d353'/%3E%3Crect x='54' y='6' width='40' height='40' rx='9' fill='%2326a641'/%3E%3Crect x='6' y='54' width='40' height='40' rx='9' fill='%23006d32'/%3E%3Crect x='54' y='54' width='40' height='40' rx='9' fill='%230e4429'/%3E%3C/svg%3E" type="image/svg+xml">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:dark light;
+  --bg:#0d1117;--panel:#161b22;--panel-2:#11161d;--border:#30363d;
+  --fg:#e6edf3;--muted:#8d96a0;--accent:#2ea043;--accent-fg:#ffffff;
+  --l0:#161b22;--l1:#0e4429;--l2:#006d32;--l3:#26a641;--l4:#39d353;
+  --hair:rgba(255,255,255,.06);
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#ffffff;--panel:#f6f8fa;--panel-2:#ffffff;--border:#d1d9e0;
+    --fg:#1f2328;--muted:#59636e;--accent:#1a7f37;
+    --l0:#eff2f5;--l1:#9be9a8;--l2:#40c463;--l3:#30a14e;--l4:#216e39;
+    --hair:rgba(0,0,0,.05);
+  }
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  min-height:100dvh;display:flex;flex-direction:column;
+}
+.wrap{width:100%;max-width:720px;margin:0 auto;padding:0 20px}
+a{color:var(--fg)}
+a:hover{color:var(--accent)}
+
+/* Kopf: Wortmarke links, Sprachwechsel rechts. */
+header.top{border-bottom:1px solid var(--border);padding:14px 0;position:sticky;top:0;
+  background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;letter-spacing:-.01em}
+.brand svg{display:block;border-radius:7px}
+.bar nav{display:flex;gap:14px;font-size:14px;color:var(--muted)}
+.bar nav a{color:var(--muted);text-decoration:none}
+.bar nav a:hover{color:var(--fg)}
+
+main{flex:1;padding:0 0 8px}
+
+/* Held: Zeile, Satz, Raster. */
+.hero{padding:52px 0 34px;text-align:center}
+.hero h1{font-size:clamp(38px,10vw,60px);line-height:1.05;margin:0 0 12px;letter-spacing:-.03em}
+.hero .pitch{font-size:clamp(17px,4.4vw,20px);color:var(--muted);margin:0 auto;max-width:30em}
+.graph{margin:30px auto 26px;max-width:430px}
+.graph svg{width:100%;height:auto;display:block}
+.cell{stroke:var(--hair);stroke-width:1}
+.l0{fill:var(--l0)}.l1{fill:var(--l1)}.l2{fill:var(--l2)}.l3{fill:var(--l3)}.l4{fill:var(--l4)}
+.chips .l0{background:var(--l0)}.chips .l1{background:var(--l1)}.chips .l2{background:var(--l2)}.chips .l3{background:var(--l3)}.chips .l4{background:var(--l4)}
+
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.cta{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;
+  padding:11px 20px;border-radius:10px;border:1px solid var(--accent);
+  background:var(--accent);color:var(--accent-fg)}
+.cta.ghost{background:transparent;border-color:var(--border);color:var(--fg)}
+.cta[aria-disabled="true"]{opacity:.8}
+.cta-note{color:var(--muted);font-size:13px;margin:12px 0 0}
+
+/* Kacheln: die drei Kernpunkte. */
+.tiles{display:grid;gap:14px;padding:10px 0 44px}
+@media (min-width:720px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:18px 18px 20px}
+.tile .chips{display:flex;gap:4px;margin-bottom:12px}
+.tile .chips i{width:12px;height:12px;border-radius:3px;display:block}
+.tile h2{font-size:17px;margin:0 0 6px;letter-spacing:-.01em}
+.tile p{margin:0;color:var(--muted);font-size:14.5px}
+.tile p + p{margin-top:8px}
+.tile b{color:var(--fg);font-weight:600}
+
+/* Dokumentseite. */
+.doc{padding:34px 0 44px}
+.doc h1{font-size:clamp(28px,7vw,36px);margin:0 0 6px;letter-spacing:-.02em}
+.doc .meta{color:var(--muted);font-size:14px;margin:0 0 24px}
+.doc h2{font-size:18px;margin:30px 0 8px;letter-spacing:-.01em}
+.doc p,.doc li{color:var(--fg);font-size:15.5px}
+.doc ul{padding-left:20px;margin:8px 0}
+.doc li{margin:4px 0}
+.doc a{color:var(--accent)}
+.tldr{background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--l3);
+  border-radius:12px;padding:16px 18px;margin:0 0 8px;font-size:15.5px}
+.back{margin-top:34px;font-size:15px}
+
+footer.foot{border-top:1px solid var(--border);padding:20px 0 calc(24px + env(safe-area-inset-bottom));
+  color:var(--muted);font-size:13.5px}
+.foot-row{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.foot a{color:var(--muted)}
+.foot nav{display:flex;flex-wrap:wrap;gap:14px}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><svg width="22" height="22" viewBox="0 0 100 100" aria-hidden="true"><rect x="6" y="6" width="40" height="40" rx="10" fill="#39d353"/><rect x="54" y="6" width="40" height="40" rx="10" fill="#26a641"/><rect x="6" y="54" width="40" height="40" rx="10" fill="#006d32"/><rect x="54" y="54" width="40" height="40" rx="10" fill="#0e4429"/></svg><span>hAiity</span></a>
+    <nav><a href="index.html">Home</a><a href="../privacy.html" hreflang="de">Deutsch</a></nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap doc">
+    <h1>Privacy Policy</h1>
+    <p class="meta">For the iOS app <b>hAiity</b> and this site · Last updated: 14 August 2026</p>
+
+    <div class="tldr">
+      <b>In short:</b> hAiity has no server of its own and no account. Your habits live on
+      your device and — if you are signed into iCloud — in your own private iCloud
+      database. We collect nothing, we see nothing, we do not track. There are no
+      analytics SDKs and no ads. The only thing that ever reaches us is what you send
+      yourself — a problem report, for instance (section 9).
+    </div>
+
+    <h2>1. Who is responsible, and contact</h2>
+    <p>hAiity is a private, non-commercial project by an individual and part of the
+      <a href="https://aiity.de" rel="noopener">aiity</a> family. Privacy questions go to
+      <a href="mailto:getaiityapp+hAiity@gmail.com">getaiityapp+hAiity@gmail.com</a>; the full provider
+      details are in the <a href="https://aiity.de/impressum" rel="noopener">imprint on
+      aiity.de</a>.</p>
+
+    <h2>2. No accounts, no trackers</h2>
+    <p>There is no registration and no login. The app sends us nothing on its own: no
+      usage statistics, no telemetry, no automatic crash reports. Nothing is tracked, no
+      analytics or advertising SDKs are built in, and no data is sold or handed to third
+      parties. The app's privacy manifest declares exactly that: no tracking, no
+      collected data types. The one route to us is the one you open yourself: the
+      voluntary problem report in section 9.</p>
+
+    <h2>3. Where your data lives</h2>
+    <p>Everything you create in hAiity — habits, names, icons, colours, check-ins, notes
+      and settings — sits in one file inside your iPhone's app group container. The
+      widget reads that same file. If the device is signed into iCloud, hAiity also
+      mirrors that file as <b>a single record in the private CloudKit database of your
+      Apple ID</b>. That database is yours; we have no access to it and run no server
+      that could see any of it. Apple's privacy terms apply to it.</p>
+    <p>Signed out of iCloud, or offline, the app keeps working exactly the same — the
+      status row under “More” says so instead of pretending. Delete the app and the local
+      data is gone; the iCloud record can be removed through your device's iCloud
+      storage settings.</p>
+
+    <h2>4. Calendar (optional)</h2>
+    <p>Only when you switch on the calendar mirror does iOS ask for calendar access.
+      hAiity then creates <b>a hAiity calendar of its own</b> and writes only your own
+      habit events into it. Your other calendars are neither changed nor read for
+      anything, and no calendar data is sent to us or to anyone else. You can revoke the
+      permission in iOS Settings at any time.</p>
+
+    <h2>5. Notifications (local)</h2>
+    <p>Reminders and the evening summary are scheduled by your device as local
+      notifications. There is no push service and no device token on our side. You are
+      asked for permission only at the moment you switch a reminder on — never at
+      launch.</p>
+
+    <h2>6. Sign in with Apple (optional, first name only)</h2>
+    <p>You can sign in with Apple so the app can address you by name. Only the
+      <b>name</b> is requested, no email address. The first name stays on the device and
+      is never transmitted anywhere; no account is created by it. A nickname you type
+      yourself does the same job without signing in at all, and you can delete the name
+      again whenever you want.</p>
+    <p>Alongside the first name, the app stores the <b>opaque identifier</b> Apple hands
+      over with that sign-in (a string like <code>001234.abcd…</code> that Apple issues
+      per developer and Apple ID; no person can be read out of it). It stays on the
+      device, is never transmitted anywhere, and does not appear in a problem report
+      either. It answers exactly one question: whether this is the developer's own
+      device, the one where the app's hidden diagnostics area opens. Remove the name and
+      it is deleted with it.</p>
+
+    <h2>7. Siri and Shortcuts</h2>
+    <p>hAiity's shortcuts run on the device and work on the same local file. If you talk
+      to Siri, Apple processes the voice input under its own terms — none of it reaches
+      us.</p>
+
+    <h2>8. Buying hAiity Pro</h2>
+    <p>The purchase runs entirely through the App Store. Apple handles the payment; we
+      receive no payment details, no address and no Apple ID. Inside the app only an
+      “unlocked” flag is stored locally. “Restore” simply asks Apple about that purchase
+      again.</p>
+
+    <h2>9. Export, sharing and reporting a problem</h2>
+    <p>The JSON export and the share card leave your device only when you send them
+      yourself — and then only to wherever you send them.</p>
+    <p>The same goes for the <b>problem report</b>: shake your iPhone and hAiity opens a
+      form. You write what happened, and right below it you can <b>expand the full
+      technical text</b> that would go along — app and iOS version, build, device model
+      (such as <code>iPhone18,2</code>), the number of habits, check-ins and scheduled
+      notifications, file size, iCloud and calendar state, purchase status. Habit names,
+      notes, emoji, values, your name or nickname are not in it; the app cannot even
+      technically write them into that report. Nothing is sent automatically: the text
+      lands in your device's mail composer (or, without a mail account, in the share
+      dialog) and you tap Send yourself — from your own address, which we therefore see.
+      The report goes to
+      <a href="mailto:getaiityapp+hAiity@gmail.com">getaiityapp+hAiity@gmail.com</a> and
+      is used only to understand the problem and, if needed, to reply to you. If you
+      would rather not be asked at all: “More” → turn off <b>Shake to report</b> (also
+      possible straight from the form).</p>
+
+    <h2>10. This website</h2>
+    <p>This page is static, sets no cookies and loads no external fonts, scripts or
+      analytics. When you request it, the server processes technically necessary
+      connection data (IP address, time, requested file, user agent) to deliver and
+      secure the page; the legal basis is Art. 6(1)(f) GDPR. This data is not combined
+      into profiles.</p>
+
+    <h2>11. Your rights</h2>
+    <p>Under the GDPR you have the rights of access (Art. 15), rectification (Art. 16),
+      erasure (Art. 17), restriction (Art. 18), data portability (Art. 20) and objection
+      (Art. 21), plus the right to lodge a complaint with a supervisory authority
+      (Art. 77). In practice: we store no personal data about you, so we can neither
+      disclose nor delete anything — we simply do not have it. Your data sits on your
+      device and in your own iCloud, both of which you control. The one exception is a
+      problem report you sent us yourself (section 9): it then sits in our mailbox as an
+      email. Write to us and we will delete it.</p>
+
+    <h2>12. Changes</h2>
+    <p>If the way the app works changes, this policy is updated. The version published
+      here, with the date shown above, is the one that applies.</p>
+
+    <p class="back"><a href="index.html">← Back to the start page</a></p>
+  </div>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <p style="margin:0">hAiity — habits, GitHub style</p>
+    <nav><a href="index.html">Home</a><a href="https://aiity.de" rel="noopener">aiity</a><a href="mailto:getaiityapp+hAiity@gmail.com">getaiityapp+hAiity@gmail.com</a></nav>
+  </div>
+</footer>
+
+</body>
+</html>

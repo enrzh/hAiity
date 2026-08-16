@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Datenschutzerklärung — hAiity</title>
+<meta name="description" content="Datenschutzerklärung für die iOS-App hAiity: keine Konten, keine Tracker, Daten auf dem Gerät und in der privaten iCloud des Nutzers.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='6' y='6' width='40' height='40' rx='9' fill='%2339d353'/%3E%3Crect x='54' y='6' width='40' height='40' rx='9' fill='%2326a641'/%3E%3Crect x='6' y='54' width='40' height='40' rx='9' fill='%23006d32'/%3E%3Crect x='54' y='54' width='40' height='40' rx='9' fill='%230e4429'/%3E%3C/svg%3E" type="image/svg+xml">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:dark light;
+  --bg:#0d1117;--panel:#161b22;--panel-2:#11161d;--border:#30363d;
+  --fg:#e6edf3;--muted:#8d96a0;--accent:#2ea043;--accent-fg:#ffffff;
+  --l0:#161b22;--l1:#0e4429;--l2:#006d32;--l3:#26a641;--l4:#39d353;
+  --hair:rgba(255,255,255,.06);
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#ffffff;--panel:#f6f8fa;--panel-2:#ffffff;--border:#d1d9e0;
+    --fg:#1f2328;--muted:#59636e;--accent:#1a7f37;
+    --l0:#eff2f5;--l1:#9be9a8;--l2:#40c463;--l3:#30a14e;--l4:#216e39;
+    --hair:rgba(0,0,0,.05);
+  }
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  min-height:100dvh;display:flex;flex-direction:column;
+}
+.wrap{width:100%;max-width:720px;margin:0 auto;padding:0 20px}
+a{color:var(--fg)}
+a:hover{color:var(--accent)}
+
+/* Kopf: Wortmarke links, Sprachwechsel rechts. */
+header.top{border-bottom:1px solid var(--border);padding:14px 0;position:sticky;top:0;
+  background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;letter-spacing:-.01em}
+.brand svg{display:block;border-radius:7px}
+.bar nav{display:flex;gap:14px;font-size:14px;color:var(--muted)}
+.bar nav a{color:var(--muted);text-decoration:none}
+.bar nav a:hover{color:var(--fg)}
+
+main{flex:1;padding:0 0 8px}
+
+/* Held: Zeile, Satz, Raster. */
+.hero{padding:52px 0 34px;text-align:center}
+.hero h1{font-size:clamp(38px,10vw,60px);line-height:1.05;margin:0 0 12px;letter-spacing:-.03em}
+.hero .pitch{font-size:clamp(17px,4.4vw,20px);color:var(--muted);margin:0 auto;max-width:30em}
+.graph{margin:30px auto 26px;max-width:430px}
+.graph svg{width:100%;height:auto;display:block}
+.cell{stroke:var(--hair);stroke-width:1}
+.l0{fill:var(--l0)}.l1{fill:var(--l1)}.l2{fill:var(--l2)}.l3{fill:var(--l3)}.l4{fill:var(--l4)}
+.chips .l0{background:var(--l0)}.chips .l1{background:var(--l1)}.chips .l2{background:var(--l2)}.chips .l3{background:var(--l3)}.chips .l4{background:var(--l4)}
+
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.cta{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;
+  padding:11px 20px;border-radius:10px;border:1px solid var(--accent);
+  background:var(--accent);color:var(--accent-fg)}
+.cta.ghost{background:transparent;border-color:var(--border);color:var(--fg)}
+.cta[aria-disabled="true"]{opacity:.8}
+.cta-note{color:var(--muted);font-size:13px;margin:12px 0 0}
+
+/* Kacheln: die drei Kernpunkte. */
+.tiles{display:grid;gap:14px;padding:10px 0 44px}
+@media (min-width:720px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:18px 18px 20px}
+.tile .chips{display:flex;gap:4px;margin-bottom:12px}
+.tile .chips i{width:12px;height:12px;border-radius:3px;display:block}
+.tile h2{font-size:17px;margin:0 0 6px;letter-spacing:-.01em}
+.tile p{margin:0;color:var(--muted);font-size:14.5px}
+.tile p + p{margin-top:8px}
+.tile b{color:var(--fg);font-weight:600}
+
+/* Dokumentseite. */
+.doc{padding:34px 0 44px}
+.doc h1{font-size:clamp(28px,7vw,36px);margin:0 0 6px;letter-spacing:-.02em}
+.doc .meta{color:var(--muted);font-size:14px;margin:0 0 24px}
+.doc h2{font-size:18px;margin:30px 0 8px;letter-spacing:-.01em}
+.doc p,.doc li{color:var(--fg);font-size:15.5px}
+.doc ul{padding-left:20px;margin:8px 0}
+.doc li{margin:4px 0}
+.doc a{color:var(--accent)}
+.tldr{background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--l3);
+  border-radius:12px;padding:16px 18px;margin:0 0 8px;font-size:15.5px}
+.back{margin-top:34px;font-size:15px}
+
+footer.foot{border-top:1px solid var(--border);padding:20px 0 calc(24px + env(safe-area-inset-bottom));
+  color:var(--muted);font-size:13.5px}
+.foot-row{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.foot a{color:var(--muted)}
+.foot nav{display:flex;flex-wrap:wrap;gap:14px}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><svg width="22" height="22" viewBox="0 0 100 100" aria-hidden="true"><rect x="6" y="6" width="40" height="40" rx="10" fill="#39d353"/><rect x="54" y="6" width="40" height="40" rx="10" fill="#26a641"/><rect x="6" y="54" width="40" height="40" rx="10" fill="#006d32"/><rect x="54" y="54" width="40" height="40" rx="10" fill="#0e4429"/></svg><span>hAiity</span></a>
+    <nav><a href="index.html">Startseite</a><a href="en/privacy.html" hreflang="en">English</a></nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap doc">
+    <h1>Datenschutzerklärung</h1>
+    <p class="meta">Für die iOS-App <b>hAiity</b> und diese Seite · Stand: 14. August 2026</p>
+
+    <div class="tldr">
+      <b>Kurz gesagt:</b> hAiity hat keinen eigenen Server und kein Konto. Deine Habits
+      liegen auf deinem Gerät und — wenn du bei iCloud angemeldet bist — in deiner
+      eigenen privaten iCloud-Datenbank. Wir erheben nichts, wir sehen nichts, wir
+      tracken nicht. Es gibt keine Analyse-SDKs und keine Werbung. Bei uns kommt nur
+      an, was du selbst abschickst — eine Fehlermeldung etwa (Abschnitt 9).
+    </div>
+
+    <h2>1. Verantwortlich und Kontakt</h2>
+    <p>hAiity ist ein privates, nicht-kommerzielles Projekt einer Privatperson und Teil
+      der <a href="https://aiity.de" rel="noopener">aiity</a>-Familie. Fragen zum
+      Datenschutz gehen an <a href="mailto:getaiityapp+hAiity@gmail.com">getaiityapp+hAiity@gmail.com</a>;
+      die vollständigen Anbieterangaben stehen im
+      <a href="https://aiity.de/impressum" rel="noopener">Impressum auf aiity.de</a>.</p>
+
+    <h2>2. Keine Konten, keine Tracker</h2>
+    <p>Es gibt keine Registrierung und keinen Login. Die App sendet von sich aus nichts
+      an uns: keine Nutzungsstatistiken, keine Telemetrie, keine automatischen
+      Absturzberichte. Es findet kein Tracking statt, es sind keine Analyse- oder
+      Werbe-SDKs eingebaut, und es werden keine Daten an Dritte verkauft oder
+      weitergegeben. Das Privacy-Manifest der App meldet entsprechend „kein Tracking,
+      keine erhobenen Datenarten“. Den einen Weg zu uns öffnest du selbst: die
+      freiwillige Fehlermeldung in Abschnitt 9.</p>
+
+    <h2>3. Wo deine Daten liegen</h2>
+    <p>Alles, was du in hAiity anlegst — Habits, Namen, Icons, Farben, Häkchen,
+      Notizen und Einstellungen — steht in einer Datei im App-Group-Container deines
+      iPhones. Das Widget liest genau diese Datei. Ist das Gerät bei iCloud angemeldet,
+      spiegelt hAiity diese Datei zusätzlich als <b>einen einzigen Datensatz in die
+      private CloudKit-Datenbank deiner Apple-ID</b>. Diese Datenbank gehört dir; wir
+      haben keinen Zugriff darauf und betreiben auch keinen Server, der etwas davon
+      sähe. Es gelten dafür die Datenschutzbestimmungen von Apple.</p>
+    <p>Ohne iCloud-Anmeldung oder ohne Netz funktioniert die App vollständig weiter —
+      die Statuszeile unter „Mehr“ sagt dann genau das. Löschst du die App, sind die
+      lokalen Daten weg; den iCloud-Datensatz entfernst du über die iCloud-Verwaltung
+      deines Geräts.</p>
+
+    <h2>4. Kalender (optional)</h2>
+    <p>Erst wenn du den Kalender-Spiegel einschaltest, fragt iOS nach dem Zugriff auf
+      deine Kalender. hAiity legt dann einen <b>eigenen hAiity-Kalender</b> an und
+      schreibt dort ausschließlich die Termine deiner eigenen Habits hinein. Deine
+      übrigen Kalender werden weder verändert noch ausgewertet, und es werden keine
+      Kalenderdaten an uns oder an Dritte übertragen. Du kannst die Erlaubnis in den
+      iOS-Einstellungen jederzeit widerrufen.</p>
+
+    <h2>5. Mitteilungen (lokal)</h2>
+    <p>Erinnerungen und die Abendzusammenfassung plant dein Gerät selbst als lokale
+      Mitteilungen. Es gibt keinen Push-Dienst und keine Geräte-Token bei uns. Nach der
+      Erlaubnis gefragt wirst du nur in dem Moment, in dem du eine Erinnerung
+      einschaltest — nie beim Start.</p>
+
+    <h2>6. Anmelden mit Apple (optional, nur der Vorname)</h2>
+    <p>Du kannst dich mit Apple anmelden, damit dich die App beim Namen nennt. Angefragt
+      wird dabei <b>nur der Name</b>, keine E-Mail-Adresse. Der Vorname bleibt auf dem
+      Gerät und wird nirgendwohin übertragen; ein Konto entsteht dadurch nicht. Ein
+      selbst eingetragener Alias tut dasselbe, ganz ohne Anmeldung, und du kannst den
+      Namen jederzeit wieder löschen.</p>
+    <p>Neben dem Vornamen legt die App die <b>undurchsichtige Kennung</b> ab, die Apple
+      bei dieser Anmeldung mitgibt (eine Zeichenfolge wie <code>001234.abcd…</code>, die
+      Apple je Entwickler und Apple-ID vergibt; ein Name lässt sich daraus nicht
+      ablesen). Sie bleibt auf dem Gerät, wird nirgendwohin übertragen und steht auch
+      nicht in einer Fehlermeldung. Sie beantwortet genau eine Frage: ob dies das Gerät
+      des Entwicklers ist, auf dem der versteckte Diagnosebereich der App aufgeht.
+      Entfernst du den Namen, wird sie mit gelöscht.</p>
+
+    <h2>7. Siri und Kurzbefehle</h2>
+    <p>Die Kurzbefehle von hAiity laufen auf dem Gerät und arbeiten mit derselben
+      lokalen Datei. Sprichst du mit Siri, verarbeitet Apple die Spracheingabe nach
+      seinen eigenen Bestimmungen — an uns geht davon nichts.</p>
+
+    <h2>8. Kauf von hAiity Pro</h2>
+    <p>Der Kauf läuft vollständig über den App Store. Apple wickelt die Zahlung ab; wir
+      erhalten keine Zahlungsdaten, keine Adresse und keine Apple-ID. In der App wird
+      nur ein Schalter „freigeschaltet“ lokal gespeichert. „Wiederherstellen“ fragt
+      diesen Kauf erneut bei Apple ab.</p>
+
+    <h2>9. Export, Teilen und Fehler melden</h2>
+    <p>Der JSON-Export und die Teilen-Karte verlassen dein Gerät nur, wenn du sie selbst
+      verschickst — und dann genau dorthin, wohin du sie schickst.</p>
+    <p>Dasselbe gilt für die <b>Fehlermeldung</b>: Schüttelst du das iPhone, öffnet
+      hAiity ein Formular. Du schreibst hinein, was passiert ist, und siehst darunter
+      <b>vollständig aufklappbar den technischen Text</b>, der mitgehen würde — App-
+      und iOS-Version, Build, Gerätemodell (etwa <code>iPhone18,2</code>), Anzahl der
+      Habits, Häkchen und geplanten Mitteilungen, Dateigröße, iCloud- und
+      Kalender-Zustand, Kaufstatus. Habit-Namen, Notizen, Emojis, Werte, dein Name oder
+      Alias sind darin nicht enthalten; die App kann sie technisch gar nicht in diesen
+      Bericht schreiben. Abgeschickt wird nichts automatisch: Der Text landet im
+      Mail-Fenster deines Geräts (oder, ohne Mail-Konto, im Teilen-Dialog), und du
+      tippst selbst auf Senden — mit deiner eigenen Absenderadresse, die wir dadurch
+      sehen. Die Meldung geht an
+      <a href="mailto:getaiityapp+hAiity@gmail.com">getaiityapp+hAiity@gmail.com</a> und
+      wird nur benutzt, um den Fehler zu verstehen und dir gegebenenfalls zu antworten.
+      Willst du gar nicht gefragt werden: „Mehr“ → <b>Schütteln zum Melden</b>
+      ausschalten (auch direkt im Formular möglich).</p>
+
+    <h2>10. Diese Website</h2>
+    <p>Diese Seite ist statisch, setzt keine Cookies und lädt keine externen Schriften,
+      Skripte oder Analysedienste. Beim Abruf verarbeitet der Server technisch
+      notwendige Verbindungsdaten (IP-Adresse, Zeitpunkt, angeforderte Datei,
+      User-Agent) zur Auslieferung und Absicherung; Rechtsgrundlage ist Art. 6 Abs. 1
+      lit. f DSGVO. Diese Daten werden nicht zu Profilen zusammengeführt.</p>
+
+    <h2>11. Deine Rechte</h2>
+    <p>Nach der DSGVO hast du Rechte auf Auskunft (Art. 15), Berichtigung (Art. 16),
+      Löschung (Art. 17), Einschränkung (Art. 18), Datenübertragbarkeit (Art. 20) und
+      Widerspruch (Art. 21) sowie ein Beschwerderecht bei einer Aufsichtsbehörde
+      (Art. 77). In der Praxis gilt: Wir speichern keine personenbezogenen Daten von
+      dir und können deshalb weder Auskunft geben noch etwas löschen — wir haben es
+      schlicht nicht. Deine Daten liegen auf deinem Gerät und in deiner eigenen iCloud;
+      beides kontrollierst du selbst. Die einzige Ausnahme ist eine Fehlermeldung, die
+      du uns selbst geschickt hast (Abschnitt 9): Sie liegt dann als E-Mail in unserem
+      Postfach. Schreib uns, und wir löschen sie.</p>
+
+    <h2>12. Änderungen</h2>
+    <p>Ändert sich die Funktionsweise der App, wird diese Erklärung angepasst.
+      Maßgeblich ist die hier veröffentlichte Fassung mit dem oben genannten Stand.</p>
+
+    <p class="back"><a href="index.html">← Zurück zur Startseite</a></p>
+  </div>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <p style="margin:0">hAiity — Gewohnheiten, GitHub-Stil</p>
+    <nav><a href="index.html">Startseite</a><a href="https://aiity.de" rel="noopener">aiity</a><a href="mailto:getaiityapp+hAiity@gmail.com">getaiityapp+hAiity@gmail.com</a></nav>
+  </div>
+</footer>
+
+</body>
+</html>
