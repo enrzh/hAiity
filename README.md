@@ -1,75 +1,77 @@
-<p align="center">
-  <img src="screenshots/icon.png" width="120" alt="hAiity">
-</p>
+<p align="center"><img src="screenshots/icon.png" width="100" alt="hAiity app icon"></p>
 
 <h1 align="center">hAiity</h1>
-
-<p align="center">Habits, GitHub style. A native iOS habit tracker where every habit is a contribution graph.</p>
-
-<p align="center"><a href="https://enrzh.github.io/hAiity/">Website</a> · <a href="https://enrzh.github.io/hAiity/privacy.html">Privacy</a> · <a href="https://aiity.de">Part of the aiity family</a></p>
-
----
+<p align="center"><strong>Small habits. A bigger picture.</strong><br>A native iPhone habit tracker where every habit is a contribution graph.</p>
+<p align="center"><a href="https://enrzh.github.io/hAiity/">Explore the app</a> · <a href="https://enrzh.github.io/hAiity/en/privacy.html">Privacy</a> · <a href="mailto:getaiityapp+hAiity@gmail.com?subject=hAiity%20beta">Ask about the beta</a></p>
 
 <p align="center">
-  <img src="screenshots/habits-light.png" width="270" alt="Habit list, light">
-  <img src="screenshots/habits-dark.png" width="270" alt="Habit list, dark">
+  <img src="screenshots/habits.png" width="245" alt="Current Habits screen with example habits in light appearance">
+  <img src="screenshots/statistics.png" width="245" alt="Current Statistics screen with example progress">
+  <img src="screenshots/habits-dark-new.png" width="245" alt="Current Habits screen in dark appearance">
 </p>
 
-## What it is
+## Check in. Paint a square.
 
-A habit tracker built around one idea: a year of squares. Check in, paint a cell.
-The longer the run, the brighter it gets.
+Read a little, take a walk, make time for what matters. Each check-in fills a
+cell in your habit's contribution graph. Small actions become a visible
+pattern over time.
 
-## What it does
+- **Your kind of habit:** check-off, quantity, checklist and avoidance habits,
+  with reminders alongside them.
+- **Your schedule:** weekdays, intervals and rules within a month. Days that
+  aren't due don't break a streak. Backfill a past day when you need to.
+- **Today and the bigger picture:** a progress summary, contribution graphs,
+  streaks and full statistics with Pro.
+- **At home on iPhone:** widgets, Siri, Control Center, color palettes, app
+  icons, light/dark appearances, Dynamic Type, VoiceOver and Reduce Motion.
+- **17 interface languages**, including German and English.
 
-**Habits are calendar rules.** Not just daily or weekly — every N days, weeks,
-months or years; specific weekdays; the 3rd Tuesday or the last Friday of the
-month; start dates and end conditions. Days a habit isn't due are transparent:
-they never break a streak.
+## Your routine belongs to you
 
-**Your colours.** Six built-in palettes, or pick any colour and the app computes
-the five-step ramp for light and dark itself. Per-habit overrides, and the app
-icon follows along.
+Habits live locally on your iPhone. When the device is signed into iCloud,
+hAiity mirrors them into **your own private CloudKit database**. Offline
+tracking remains available.
 
-**Fill in the past.** Forgot Tuesday? Long-press the graph, pick the day — or
-several at once — and it's recorded. One undo puts it all back exactly as it was.
+No hAiity account, analytics, advertising or developer-operated sync server.
+Check-ins merge rather than replace one another. JSON export and import give
+you another way to keep your data; imports merge instead of overwriting it.
+Optional Apple Reminders and read-only GitHub integrations are yours to enable.
 
-**Widgets.** A pure contribution graph, a roster of every habit, Lock Screen
-accessories, and a Control Centre button to check off without opening the app.
+[English privacy policy](https://enrzh.github.io/hAiity/en/privacy.html) ·
+[Datenschutzerklärung](https://enrzh.github.io/hAiity/privacy.html)
 
-**16 languages**, German through Korean.
+## Free and Pro
 
-<p align="center">
-  <img src="screenshots/recurrence.png" width="220" alt="Recurrence editor">
-  <img src="screenshots/custom-colours.png" width="220" alt="Custom colour ramps">
-  <img src="screenshots/backfill.png" width="220" alt="Backfilling past days">
-</p>
+Free includes up to **three active habits**, every habit kind, contribution
+graphs, streaks, widgets, Siri, reminders, built-in palettes, app icons and JSON
+export. Archived habits do not count toward the limit.
 
-## Where your data lives
+hAiity Pro unlocks unlimited habits, custom colors, the calendar mirror and full
+statistics. It is designed as a **one-time purchase**, with no subscription.
+Purchase availability and regional pricing are shown in the app.
 
-On your phone. That's the whole answer.
+## Availability
 
-If you're signed into iCloud it also mirrors to **your own** private iCloud
-database, so a second device catches up on its own. There is no hAiity account,
-no sign-up, and no server of ours anywhere in the path — because there is no
-"we" in the data path to have one.
+In development, tested through TestFlight. **iPhone, iOS 18 or later.**
+This repository does not currently offer a public invitation or App Store
+download link. [Ask about beta availability](mailto:getaiityapp+hAiity@gmail.com?subject=hAiity%20beta).
 
-The sync is built so it can't lose a day: check-ins merge rather than overwrite,
-and a conflict resolves by keeping both sides.
+These screenshots were freshly captured on **October 7, 2026**, from build 276,
+using synthetic habits on a dedicated simulator. They show the current beta;
+they do not imply App Store availability.
 
-<p align="center">
-  <img src="screenshots/widget-graph.png" width="360" alt="Graph widget">
-</p>
+## About this repository
 
-## Status
+This is the public website, screenshots and privacy policies. The app
+implementation lives in a separate private repository; this is not an
+open-source distribution of the application.
 
-In TestFlight, moving toward the App Store. iPhone, iOS 17 and later.
+GitHub Pages serves plain HTML and CSS from the root of `main`. No framework,
+build step, tracking scripts or external fonts. Preview locally with
+`python3 -m http.server 8080` and open it using ego-browser.
 
-## Source
+Keep requirements, availability and free/Pro boundaries aligned with the app.
+Preserve the privacy-policy URLs. See [screenshot provenance and capture
+instructions](screenshots/README.md) before updating the images.
 
-This repository is the shop window. The app's source lives in a private
-repository — if you'd like a look, ask.
-
----
-
-<p align="center"><sub>Built with <a href="https://claude.com/claude-code">Claude Code</a></sub></p>
+Part of [aiity](https://aiity.de) · [sAiity for Mac](https://enrzh.github.io/sAiity/)
